@@ -1,0 +1,22 @@
+Recursion: It is a phenomenon when a function calls itself indefinitely until a specified condition is fulfilled.
+
+What is Stack Overflow in Recursion?
+Whenever recursion calls are executed, they’re simultaneously stored in a recursion stack where they wait for the completion of the recursive function. A recursive function can only be completed if a base condition is fulfilled and the control returns to the parent function. 
+
+But, when there is no base condition given for a particular recursive function, it gets called indefinitely which results in a Stack Overflow i.e, exceeding the memory limit of the recursion stack and hence the program terminates giving a Segmentation Fault error. 
+
+Recursive Tree :
+A recursive tree is basically a representative form of recursion which depicts how functions are called and returned as a series of events happening consecutively. 
+When a recursive call gets completed, the control returns back to its parent function which is then further executed until the last function waiting in the recursive stack returns.
+
+Head Recursion:
+In head recursion, the recursive call happens at the beginning of the function before any other operations.
+
+Tail Recursion:
+In tail recursion, the recursive call happens at the last of the function after any other operations.
+
+When to Use Each Type:
+
+Head Recursion: Use head recursion when the problem naturally breaks down into smaller subproblems at the beginning, and you don't have memory concerns. It can be easier to conceptualize and write.
+
+Tail Recursion: Use tail recursion when you want to optimize memory usage, especially for problems involving large data sets or deep recursive calls. It can help avoid stack overflow errors and is a more efficient choice in such cases.
