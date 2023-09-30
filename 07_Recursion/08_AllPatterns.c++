@@ -31,8 +31,6 @@ void recursion(int index, int sum, vector<int> &ds, vector<int> arr, int k){
         return;
     }
 
-    //exclude call
-    recursion(index+1, sum, ds, arr, k);
 
     //include call
     ds.push_back(arr[index]);
@@ -41,6 +39,9 @@ void recursion(int index, int sum, vector<int> &ds, vector<int> arr, int k){
     //backtracking
     sum-=arr[index];
     ds.pop_back();
+
+    //exclude call
+    recursion(index+1, sum, ds, arr, k);
 
 }
 int main(){
@@ -92,8 +93,6 @@ bool recursion(int index, int sum, vector<int> &ds, vector<int> arr, int k){
         else return false;
     }
 
-    //exclude call
-    if(recursion(index+1, sum, ds, arr, k) == true) return true;
 
     //include call
     ds.push_back(arr[index]);
@@ -102,6 +101,9 @@ bool recursion(int index, int sum, vector<int> &ds, vector<int> arr, int k){
     //backtracking
     sum-=arr[index];
     ds.pop_back();
+
+    //exclude call
+    if(recursion(index+1, sum, ds, arr, k) == true) return true;
 
     return false;
 
@@ -148,8 +150,6 @@ int recursion(int index, int sum, vector<int> arr, int k){
         else return 0;
     }
 
-    //exclude call
-    int left = recursion(index+1, sum, arr, k);
 
     //include call
     sum+=arr[index];
@@ -157,6 +157,9 @@ int recursion(int index, int sum, vector<int> arr, int k){
     //backtracking
     sum-=arr[index];
 
+    //exclude call
+    int left = recursion(index+1, sum, arr, k);
+    
     return left+right;
 
 }

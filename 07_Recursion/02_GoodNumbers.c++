@@ -18,7 +18,7 @@ Output: 400
 */
 
 /*
-Intuition : We know that for even positions there will be 5 possiblities and for odd positions there will be 4 possiblities. We need to calculate total number of goods numbers. Therefore we can simplye multiply total odd positions with 4 and total even positions with 5. finally the answer will be muliplication of all good numbers at odd positions and all goog numbers at even positions.
+Intuition : We know that for even positions there will be 5 possiblities and for odd positions there will be 4 possiblities. We need to calculate total number of goods numbers. Therefore we can simplye multiply total odd positions with 4 and total even positions with 5. finally the answer will be muliplication of all good numbers at odd positions and all good numbers at even positions.
 Appraoch 1: 
 We can simply iterate over the given length n. For all even index we mulitply wiht 5 and for all odd index we multiply with 4. Finally, our answer will be muliplication of all evens and odds  
 
@@ -36,7 +36,7 @@ Appraoch 2: By using recursion and logic of myPow recursion fuction
 TC: O(log n), SC: O(log n)
 */
 
-/*
+
 //defining macro
 #define mod 1000000007;
 class Solution {
@@ -56,4 +56,3 @@ public:
         return (myPow(5, even) * myPow(4, odd)) % mod; 
     }
 };
-*/

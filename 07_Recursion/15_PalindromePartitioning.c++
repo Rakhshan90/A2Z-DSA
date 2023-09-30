@@ -1,6 +1,5 @@
 /*
-Problem statement: Given a string s, partition s such that every substring of the partition is a 
-palindrome. Return all possible palindrome partitioning of s.
+Problem statement: Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of s.
 Example 1:
 Input: s = "aab"
 Output: [["a","a","b"],["aa","b"]]
@@ -8,6 +7,7 @@ Output: [["a","a","b"],["aa","b"]]
 
 /*
 Approach: "choices of picking" through recursion and backtracking
+
 1. Define a function that checks for valid palindrome partitioning whether it possible.
 2. we will be having choices of index form index to size-1 where partition possible. 
 3. if partition possible from index to i, we will store valid palindrome substring string from index to i into path.

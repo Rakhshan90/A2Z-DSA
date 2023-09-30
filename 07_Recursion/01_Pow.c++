@@ -31,7 +31,7 @@ double myPow(double x, int n) {
 Approach : same logic but by using functional recursion
 TC: O(log n), SC:O(log n)
 */
-/*
+
 double myPow(double x, int n) {
         long long nn = n;
         if(nn==0) return 1;
@@ -42,4 +42,3 @@ double myPow(double x, int n) {
         if(nn%2==0) return myPow(x*x, nn/2);
         else return x*myPow(x, nn-1);
     }
-*/

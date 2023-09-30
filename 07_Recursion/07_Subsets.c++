@@ -26,13 +26,13 @@ void recursion(vector<int> nums, int index, vector<int> temp,
             ans.push_back(temp);
             return;
         }
-        //exclude call 
-        recursion(nums, index + 1, temp, ans);
         //include call
         int num = nums[index];
         temp.push_back(num);
         recursion(nums, index + 1, temp, ans);
         temp.pop_back(); //backtracking
+        //exclude call 
+        recursion(nums, index + 1, temp, ans);
     }
     vector<vector<int>> subsets(vector<int>& nums) {
         vector<vector<int>> ans;
