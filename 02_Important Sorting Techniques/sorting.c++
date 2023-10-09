@@ -120,9 +120,9 @@ int partition(vector<int> &arr, int low, int high){
 }
 void quickSort(vector<int> &arr, int low, int high){
     if(low<high){
-        int pivot = partition(arr, low, high);
-        quickSort(arr, low, pivot-1);
-        quickSort(arr, pivot+1, high);
+        int partitionIndex = partition(arr, low, high);
+        quickSort(arr, low, partitionIndex-1);
+        quickSort(arr, partitionIndex+1, high);
     }
 }
 int main()
