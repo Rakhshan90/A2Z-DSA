@@ -12,8 +12,8 @@ TC: O(n), SC:O(n)
 /*
 Approach 2: Using bitwise xor(^)
 1. Find xor of missing and repeating number by xoring all elements of array and range [1, n]
-2. Find bitNo. of xor at which bits of different numbers bound to be different. so find defferentiating bitNo. from right in xr. 
-3. Seggragate all array elements and range elements in 0 club and 1 club based on their value of bit at position bitNo.  simultaneously perform xor on club 0 and club 1.
+2. Find the rightmost set bit of value stored in xor variable at which bits of two different numbers bound to be different. 
+3. Seggragate all array elements and range elements in 0 club and 1 club based on their value of bit at position bitNo. simultaneously perform xor on club 0 and club 1.
 4. Now iterate over the arr to cross check which number is repeating and missing of club 0 and club 1.
 
 TC:O(n), SC:O(1)
