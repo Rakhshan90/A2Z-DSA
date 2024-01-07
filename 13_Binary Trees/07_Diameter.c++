@@ -8,7 +8,7 @@ The length of a path between two nodes is represented by the number of edges bet
 Intuition: So, the idea to find the Curving Point is, consider every node in the tree as a curving point and calculate the diameter for every curving point and return the maximum of all diameters.
 Diameter at given Curving Point = Left Height + Right Height 
 
-Approach: 
+Approach: using maxHeight of binary tree approach (Optimized)
 1. Traverse the tree recursively.
 2. At every node, calculate height of left and right subtrees.
 3. Calculate the diameter for every node using the above formula.
