@@ -17,6 +17,10 @@ int main(){
     ms.erase(ms.find(1));   //only single 1 erased
     
     //rest all functions are same as set
+
+    for(auto it:ms){
+        cout<<it<<endl;
+    }
     
 
     return 0;
