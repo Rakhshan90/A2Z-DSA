@@ -19,7 +19,7 @@ int main()
     v2.emplace_back(3, 4);
 
     vector<int> v3(5, 100); // v3 has size 5 with five times 100 instances are stored
-    vector<int> v4(5);      // v3 has size 5
+    vector<int> v4(5);      // v4 has size 5
 
     vector<int> v5(v3); // copying vector 3 into vector 5
 

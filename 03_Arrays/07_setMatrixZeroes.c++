@@ -46,7 +46,7 @@ Approach 2:
 
 2. Iterate over the matrix except hashed arrays and set all elements in the rows and columns that were marked in the hash arrays to zero.
 
-3. Process hash col hash arr before processing row hash arr: col hash arr depends on the martix[0][0], if matrix[0][0] contain 0 then mark the whole col hashed arr to 0 except the variable col0.
+3. Process col hash arr before processing row hash arr: col hash arr depends on the martix[0][0], if matrix[0][0] contain 0 then mark the whole col hashed arr to 0 except the variable col0.
 row hash arr depends on the col0 variable, if col0 contain 0 then mark the whole row hashed arr to 0.
 
 TC:O(m*n), SC:O(1)

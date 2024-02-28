@@ -1,5 +1,5 @@
 //Print Fibonacci Series using iterative , TC: O(n), SC:O(1)
-/*
+
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -23,26 +23,26 @@ int main(){
 
     return 0;
 }
-*/
+
 
 //find finonacci of a number using recursion
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
 
-using namespace std;
+// using namespace std;
 
-int fibonacci(int n){
-    //base case
-    if(n<=1) return n;
-    int first_last = fibonacci(n-1);
-    int second_last = fibonacci(n-2);
-    return first_last+second_last;
-}
+// int fibonacci(int n){
+//     //base case
+//     if(n<=1) return n;
+//     int first_last = fibonacci(n-1);
+//     int second_last = fibonacci(n-2);
+//     return first_last+second_last;
+// }
 
-int main(){
-    int n;
-    cin>>n;
-    cout<<fibonacci(n);
-    return 0;
-}
+// int main(){
+//     int n;
+//     cin>>n;
+//     cout<<fibonacci(n);
+//     return 0;
+// }
 
 //TC : O(2^n) near about, SC: O(n) 
