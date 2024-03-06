@@ -8,7 +8,8 @@ In other words, inversion count indicates how far(or close) the array is from be
 Approach 1: Brute force approach
 1. First, we will run a loop(say i) from 0 to N-1 to select the first element in the pair.
 2. As index j should be greater than index i, inside loop i, we will run another loop i.e. j from i+1 to N-1.
-3. Inside this second loop, we will check if a[i] > a[j] i.e. if a[i] and a[j] can be a pair. 4. If they satisfy the condition, we will increase the count by 1.
+3. Inside this second loop, we will check if a[i] > a[j] i.e. if a[i] and a[j] can be a pair. 
+4. If they satisfy the condition, we will increase the count by 1.
 5. Finally, we will return the count i.e. the number of such pairs.
 
 TC:O(n^2), SC:O(1)

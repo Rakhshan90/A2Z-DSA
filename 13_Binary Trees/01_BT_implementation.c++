@@ -95,36 +95,6 @@ void postOrder(node*root){
     postOrder(root->right);
     cout<<root->data<<" ";
 }
-//Morris Traversal -> TC:O(n), SC:O(1)
-void morrisTraversal(node*root){
-    if(root==NULL)
-       return;
-    node*curr, *pre;
-    curr = root;
-    while(curr!=NULL){
-        if(curr->left==NULL){
-            cout<<curr->data<<" ";
-            curr=curr->right;
-        }
-        else{
-            //find predecessor that is rightmost child of left subtree
-            pre = curr->left;
-            while(pre->right!=NULL && pre->right!=curr){
-                pre=pre->right;
-            }
-            if(pre->right==NULL){
-                //create temporary link
-                pre->right = curr;
-                curr=curr->left;
-            }
-            else{
-                pre->right = NULL;
-                cout<<curr->data<<" ";
-                curr=curr->right;
-            }
-        }
-    }
-}
 //iterative way
 void buildFromlevelOrder(node*&root){
     queue<node*>q;
@@ -162,7 +132,6 @@ int main()
 
     //1 3 5 7 11 17 -1 -1 -1 -1 -1 -1 -1 
     buildFromlevelOrder(root);
-    // morrisTraversal(root);
     // cout<<endl<<"inOrder: ";
     inOrder(root);
     cout<<endl;
