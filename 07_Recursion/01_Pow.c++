@@ -1,4 +1,8 @@
 /*
+Problem statement: Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+*/
+
+/*
 Approach:  Using Binary Exponentiation
 1. Initialize ans as 1.0  and store a duplicate copy of n i.e nn using to avoid overflow
 2. Check if nn is a negative number, in that case, make it a positive number.
